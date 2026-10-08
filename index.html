@@ -3,46 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>موقع عمر</title>
+<title>spicy Burger - برجر فاخر</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@800;900&display=swap" rel="stylesheet">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { 
-  font-family: 'Cairo', sans-serif;
-  background: radial-gradient(circle at top, #0f2027, #000000);
-  color: white; min-height: 100vh;
-  display: flex; justify-content: center; align-items: center;
-  text-align: center;
-}
-.card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(0,255,136,0.3);
-  backdrop-filter: blur(10px);
-  padding: 50px; border-radius: 30px;
-  box-shadow: 0 0 40px rgba(0,255,136,0.2);
-  animation: float 3s ease-in-out infinite;
-}
-@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-15px)} }
-h1 { font-size: 55px; color: #00ff88; text-shadow: 0 0 20px #00ff88; }
-p { font-size: 20px; margin: 15px 0; opacity: 0.8; }
-.btn {
-  display: inline-block; margin-top: 25px;
-  padding: 15px 35px; font-size: 18px; font-weight: bold;
-  background: #00ff88; color: #000; border-radius: 50px;
-  text-decoration: none; border: none; cursor: pointer;
-  box-shadow: 0 0 20px #00ff88;
-  transition: 0.3s;
-}
-.btn:hover { transform: scale(1.1); box-shadow: 0 0 40px #00ff88; }
-.links { margin-top: 20px; font-size: 14px; opacity: 0.5; }
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif}
+body{background:#0f0f0f;color:white}
+.hero{background:linear-gradient(rgba(0,0,0,.6),#0f0f0f),url('https://images.unsplash.com/photo-1568909344668-6f14a07b56a0?w=800') center/cover;height:85vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
+.hero h1{font-size:55px;font-weight:900;line-height:1} .hero h1 span{color:#FFD700}
+.hero p{color:#ccc;margin:15px 0 25px}
+.btn{background:#FFD700;color:black;padding:14px 35px;border-radius:30px;font-weight:900;text-decoration:none;font-size:18px}
+.menu{padding:40px 20px;max-width:500px;margin:auto}
+.card{background:#1a1a1a;border-radius:20px;padding:18px;display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;border:1px solid #ffffff10}
+.card img{width:70px;height:70px;border-radius:15px;object-fit:cover}
+.price{color:#FFD700;font-weight:900;font-size:20px}
+.order{text-align:center;padding:20px}
+.whats{background:#25D366;color:white;padding:15px 30px;border-radius:30px;text-decoration:none;font-weight:900;display:inline-block}
 </style>
 </head>
 <body>
-<div class="card">
-  <h1>أهلا بالعالم! أنا عمر 😎</h1>
-  <p>مطور مواقع المستقبل - أول موقع ليا</p>
-  <button class="btn" onclick="alert('عاااش يا عمر! انت جامد فشخ 🔥')">دوس هنا يا بطل</button>
-  <div class="links">Made with ❤️ by Omar</div>
+<div class="hero">
+  <h1>BURGER<br><span>spicy</span></h1>
+  <p>أجمد برجر في القاهرة - طعم هيدمرك</p>
+  <a class="btn" href="#menu">شوف المنيو 🍔</a>
+</div>
+
+<div class="menu" id="menu">
+  <h2 style="text-align:center;margin-bottom:20px">🔥 المنيو بتاعنا</h2>
+  
+  <div class="card">
+    <div><b>دبل تشيز برجر</b><br><small style="color:#888">لحم بلدي + شيدر + صوص سري</small></div>
+    <div style="text-align:left"><div class="price">120ج</div><img src="https://images.unsplash.com/photo-1568909344668-6f14a07b56a0?w=200"></div>
+  </div>
+
+  <div class="card">
+    <div><b>كرسبي تشيكن</b><br><small style="color:#888">فراخ كرسبي مقرمشة + كولسلو</small></div>
+    <div style="text-align:left"><div class="price">95ج</div><img src="https://images.unsplash.com/photo-1606756790138-261d2b21cd75?w=200"></div>
+  </div>
+
+  <div class="card">
+    <div><b>برجر الشلة</b><br><small style="color:#888">يكفي 3 أشخاص + بطاطس + بيبسي</small></div>
+    <div style="text-align:left"><div class="price">250ج</div><img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=200"></div>
+  </div>
+</div>
+
+<div class="order">
+  <p style="color:#888;margin-bottom:15px">اطلب دلوقتي واتساب وهيجيلك لحد البيت</p>
+  <a class="whats" href="https://wa.me/20123456789">اطلب واتساب 📱</a>
+  <p style="margin-top:30px;color:#444;font-size:12px">تصميم بواسطة Omar - omarattia7755-art.github.io/my_website</p>
 </div>
 </body>
 </html>
