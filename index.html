@@ -8,74 +8,50 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif}
 body{background:#0f0f1a;color:white}
-.hero{height:90vh;background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1568909344668-6f14a07b56a0?q=80&w=1200');background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px}
+.hero{height:90vh;background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1568909344668-6f14a07b56a0?q=80&w=1000');background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
 .hero h1{font-size:70px;line-height:1;font-weight:900;text-shadow:0 0 30px #ffcc00}
 .hero h1 span{color:#ffcc00;display:block}
 .hero p{font-size:20px;margin:15px 0;opacity:0.8}
-.btn{background:#ffcc00;color:#000;padding:15px 40px;border-radius:50px;font-size:20px;font-weight:900;text-decoration:none;display:inline-block;margin-top:10px;box-shadow:0 0 20px #ffcc00;transition:0.3s}
+.btn{background:#ffcc00;color:#000;padding:15px 40px;border-radius:50px;font-size:20px;font-weight:900;text-decoration:none;display:inline-block;margin-top:10px}
 .btn:hover{transform:scale(1.1)}
 .menu{max-width:800px;margin:50px auto;padding:20px}
 .menu h2{text-align:center;font-size:35px;margin-bottom:30px}
-.card{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:20px;display:flex;align-items:center;justify-content:space-between;margin-bottom:15px;backdrop-filter:blur(10px)}
-.card img{width:80px;height:80px;border-radius:15px;object-fit:cover}
+.card{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:20px;display:flex;align-items:center;gap:15px;margin-bottom:15px}
+.card img{width:90px;height:90px;border-radius:15px;object-fit:cover}
+.card-info{flex:1}
 .card-info h3{font-size:22px}
 .card-info p{opacity:0.6;font-size:14px}
-.price{color:#ffcc00;font-size:28px;font-weight:900}
+.price{color:#ffcc00;font-size:26px;font-weight:900}
 .order{text-align:center;margin:40px 0}
 .whatsapp{background:#25D366;color:white;padding:18px 50px;border-radius:50px;font-size:22px;font-weight:900;text-decoration:none;display:inline-block}
 </style>
 </head>
 <body>
-
 <div class="hero">
-<div>
-<h1>BURGER <span>SPICY</span></h1>
-<p>أجمد برجر في القاهرة - طعم هيهزك</p>
-<a href="#menu" class="btn">🍔 شوف المنيو</a>
+<h1>أجمد <span>برجر</span> في مصر</h1>
+<p>لحمة بلدي 100% - طعم هيدمر الدنيا</p>
+<a href="https://wa.me/201000000000?text=عايز اطلب برجر" class="btn">اطلب دلوقتي 🔥</a>
 </div>
-</div>
-
-<div class="menu" id="menu">
-<h2>🔥 المنيو بتاعنا</h2>
-
+<div class="menu">
+<h2>المنيو بتاعنا 🍔</h2>
 <div class="card">
-<div class="card-info">
-<h3>دبل تشيز برجر</h3>
-<p>لحم بلدي + شيدر + صوص سري</p>
-</div>
-<div style="text-align:left">
-<div class="price">120ج</div>
 <img src="https://images.unsplash.com/photo-1568909344668-6f14a07b56a0?q=80&w=200">
+<div class="card-info"><h3>كلاسيك برجر</h3><p>لحمة 150جرام + جبنة شيدر + خس</p></div>
+<div class="price">120ج</div>
 </div>
-</div>
-
 <div class="card">
-<div class="card-info">
-<h3>كرسبي تشيكن</h3>
-<p>فراخ كرسبي مقرمشة + كولسلو</p>
-</div>
-<div style="text-align:left">
-<div class="price">95ج</div>
-<img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?q=80&w=200">
-</div>
-</div>
-
-<div class="card">
-<div class="card-info">
-<h3>برجر الشلة</h3>
-<p>يكفي 3 أشخاص + بطاطس + بيبسي</p>
-</div>
-<div style="text-align:left">
-<div class="price">250ج</div>
 <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=200">
+<div class="card-info"><h3>دبل تشيز الخطير</h3><p>2 قطعة لحم + دبل جبنة سايحة</p></div>
+<div class="price">185ج</div>
 </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?q=80&w=200">
+<div class="card-info"><h3>سبايسي فاير</h3><p>صوص سبايسي مولع + هالابينو</p></div>
+<div class="price">165ج</div>
 </div>
-
 <div class="order">
-<a class="whatsapp" href="https://wa.me/201000000000?text=سلامو عليكم عايز اطلب برجر">اطلب واتساب دلوقتي 🟢</a>
-<p style="margin-top:15px;opacity:0.5">غير الرقم ده لرقمك انت</p>
+<a href="https://wa.me/201000000000?text=عايز اطلب" class="whatsapp">اطلب واتساب دلوقتي 📲</a>
 </div>
-
 </div>
 </body>
 </html>
